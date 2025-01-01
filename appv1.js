@@ -8,8 +8,20 @@ class spaceShip {
 }
 const ussAssembly = new spaceShip(20,5,0.7);
 
-//alienFleet = new spaceShip[6];
+al = new spaceShip[6];
 
+class alienFleet {
+    constructor() {
+        this.aliens = []
+    }
+    newAlien(hull, firepower, accuracy) {
+        let alien = new spaceShip(hull, firepower, accuracy)
+        this.aliens.push(alien)
+        return alien
+    }
+}
+
+let alien = new alienFleet()
 for(let i=1; i<6; i++) {
     hull = 3.0 + 3.0*Math.random();
     firepower = 2.0 + 2.0*Math.random();
@@ -23,20 +35,19 @@ for(let i=1; i<6; i++) {
 throw new Error()
 
 // if alien ships remaining
-let alienShips = 1
-while(alienShips) {
+while(aliens) {
     let alienSurvives = true
     let iSurvive = true
     while(alienSurvives && iSurvive) {
         // I attack
         // alien destroyed
-            alienShips--;
+            aliens--;
             // indicate alternative to retreat
             // if retreat, then break;
             continue;
         // alien survives and attackes
         // alien attack
-        if (Math.random() < alienShip[0].accuracy) {
+        if (Math.random() < aliens[0].accuracy) {
             console.log('You have been hit!');
         }
         // if I'm destroyed, iSurvive = false; break;
