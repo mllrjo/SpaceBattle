@@ -22,7 +22,6 @@ function getInput() {
     })
 };
 
-
 // spaceShip class definition
 class spaceShip {
     constructor(hull, firepower, accuracy) {
@@ -47,7 +46,6 @@ for(let i=0; i<fleetSize; i++) {
 }
 // checkpoint
 for(let i=0; i<fleetSize; i++) {
-    //    console.log(i + " " + "hull: ", alien[i].hull)
     console.log(alienFleet[i].hull)
 }
 let aliens = fleetSize-1;
