@@ -1,0 +1,6 @@
+
+This is the minimal version and runs with node.js.
+
+No graphics. No eventListening. Used readline inteface with a promise for user input.
+
+Counts down alien 5, alien 4, alien3, alien2, alien1, alien 0 if we make it that far.
