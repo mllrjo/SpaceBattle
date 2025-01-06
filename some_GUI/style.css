@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.aliens {
+    position: relative;
+    border: solid black;
+    background-color: grey;
+    margin: 1em;
+    padding: 1em;
+    border-width: .2px;
+    height: 55vh;
+    width: 50%;
+    z-index: 0;
+}
+
+#USSBox,  #aliensBox {
+    position: relative;
+    border: solid black;
+    background-color: grey;
+/*
+    margin: 1em;
+    padding: 1em;
+*/
+    border-width: .2px;
+    height: 55vh;
+    width: 50%;
+    z-index: 0;
+}
+
+#USS {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;    
+    z-index: 1;
+}
+#aliens {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;    
+    z-index: 1;
+}
+#RoC {
+    width: 30px;
+    height: 30px;
+}
+
+.buttons {
+    display:flex;
+    margin: auto;
+    justify-content: center;
+}
+#continueButton, #retreatButton {
+    width: auto;
+    height: 30px;
+    z-index: 1;
+}
